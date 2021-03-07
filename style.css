@@ -19,3 +19,50 @@ mytheme is distributed under the terms of the GNU GPL.
 div {
   color: red;
 }
+.sub-menu h2 {
+  border-bottom: 1px dotted #a6a6aa;
+  font-size: 1em;
+}
+.sub-menu .pagenav {
+  list-style: none;
+}
+.sub-menu .pagenav ul {
+  margin: 0;
+  list-style: none;
+  font-size: 0.9em;
+}
+.sub-menu .pagenav ul ul {
+  font-size: 1em;
+}
+.sub-menu .pagenav > ul {
+  padding: 3px;
+  border: 1px solid #8da0b0;
+  border-radius: 3px;
+}
+.sub-menu .pagenav > ul li {
+  padding: 5px 0;
+  border-top: 1px dotted #8da0b0;
+}
+.sub-menu .children {
+  padding-left: 1em;
+}
+.sub-menu .pagenav > ul li:first-child,
+.sub-menu .pagenav .children li {
+  border: none;
+}
+.sub-menu .pagenav > ul li:before {
+  width: 10px;
+  height: 10px;
+  font-size: 10px;
+  font-family: "Genericons";
+  content: "\f104";
+}
+.sub-menu a:hover {
+  text-decoration: underline;
+}
+.sub-menu .current_page_item a {
+  color: #faa0f1;
+}
+.sub-menu .current_page_item .children a {
+  color: #496a8d;
+}
